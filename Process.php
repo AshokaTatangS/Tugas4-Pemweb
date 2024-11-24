@@ -26,8 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validasi file
     if ($file['error'] !== UPLOAD_ERR_OK) {
         $errors[] = "Terjadi kesalahan saat mengunggah file.";
-    } elseif ($file['size'] > 10 * 1024 * 1024) { // 2MB
-        $errors[] = "File terlalu besar. Maksimal 2MB.";
+    } elseif ($file['size'] > 10 * 1024 * 1024) {
+        $errors[] = "File terlalu besar. Maksimal 10MB.";
     }
 
     // Jika ada error, tampilkan pesan kesalahan dan hentikan eksekusi

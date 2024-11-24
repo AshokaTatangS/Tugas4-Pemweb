@@ -9,39 +9,45 @@ $data = $_SESSION['data'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasil Pendaftaran</title><?php
-session_start();
-if (!isset($_SESSION['data'])) {
-    echo "Tidak ada data yang tersedia.";
-    exit;
-}
+                                    session_start();
+                                    if (!isset($_SESSION['data'])) {
+                                        echo "Tidak ada data yang tersedia.";
+                                        exit;
+                                    }
 
-$data = $_SESSION['data'];
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasil Pendaftaran</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
-</head>
+                                    $data = $_SESSION['data'];
+                                    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hasil Pendaftaran</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f4f4f4;
+            }
+        </style>
+    </head>
+
 <body>
     <h1>Hasil Pendaftaran</h1>
     <table>
@@ -84,23 +90,28 @@ $data = $_SESSION['data'];
         <?php endforeach; ?>
     </table>
 </body>
+
 </html>
 
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+</style>
 </head>
+
 <body>
     <h1>Hasil Pendaftaran</h1>
     <table>
@@ -143,4 +154,5 @@ $data = $_SESSION['data'];
         <?php endforeach; ?>
     </table>
 </body>
+
 </html>
